@@ -1,0 +1,183 @@
+$disposicion-img: span 2;
+$blanco: #FFFFFF;
+$rojo: #F51010;
+$gris: #515151;
+$black: #000;
+$size: 500px;
+
+body {
+	display: grid;
+	background: $black;
+	color: $blanco;
+}
+header {
+	display: grid;
+	grid-template-areas: ".logomth menu";
+	grid-template-columns: 1fr 3fr;
+	grid-auto-rows: $size/5 $size/5;
+}
+/*Logo del header*/
+.header__logomth {
+	float: left;
+	display: inline;
+	margin-left: 30px;
+	
+	&:hover {
+		transform: scale(0.5, 0.5);
+		transition: transform 3s;
+	}
+}
+
+/*Barra de navegacion*/
+.navbar-collapse {
+	margin-left: $size/10;
+}
+.nav-link {
+	color: $rojo;
+}
+
+/*Parrafo del Home*/
+.Bienvenidos {
+	height: $size;
+	background-image: url(../Imagenes/portada.jpg);
+	opacity: 0.9;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: ($size*3)-150 $size;
+	font-family: sans-serif;
+	font-size: 30px;
+	text-align: center;
+	article {
+		padding: 200px;						
+		border-radius: 5px;		
+		p { 
+			background: rgb(81,81,81,) 0.5;   
+			/*Lucioano quiero ponerle opacodad solo al fondo pero me lo toma a todo el parrafo incluido el texto
+			no logro desifrar como hacer para que me tomo solo el fondo.*/
+			text-align: center;
+		    color: $black;
+		}
+	}
+}
+
+/*Titulos de seccion*/
+.titulo__seccion { font-size: 35px; 
+	font-family: sans-serif; 
+	text-align: center; 
+	letter-spacing: 5px;
+}
+	
+/*subtitulos de ns*/
+h3 { justify-content: center;
+	color:$rojo;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+/*galeria imagenes*/
+
+.titulo__seccion__parrafo { text-align: center; 
+		font-size: 20px;
+}
+
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	grid-auto-rows: 200px;
+	grid-gap: 20px;
+}
+.galleryImg {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.galleryItem {
+	&:nth-child(4) {
+		grid-column-start: $disposicion-img;
+		grid-row-start: $disposicion-img;
+	}
+	&:nth-child(7) {
+		grid-column-start: $disposicion-img;
+		grid-row-start: $disposicion-img;
+	}
+	&:nth-child(5) {
+		grid-column-start: $disposicion-img;
+		grid-row-start: $disposicion-img;
+	}
+	&:nth-child(3) {
+		grid-column-start: $disposicion-img;
+		grid-row-start: $disposicion-img;
+	}
+	&:nth-child(11) {
+		grid-column-start: $disposicion-img;
+		grid-row-start: $disposicion-img;
+	}
+	&:nth-child(12) {
+		grid-column-start: $disposicion-img;
+		grid-row-start: $disposicion-img;
+	}
+}
+.videos {
+	display: flex;
+	float: left;
+	justify-content: center;
+}
+.vitem {
+	margin: 10px;
+}
+
+/*Quienes Somos*/
+.quienes {
+	color: $blanco;
+	font-weight: 600;
+	p {
+		strong {
+			font-style: italic;
+			color: $rojo;
+		}
+	}
+}
+/*Fondo QS*/
+.quienes__container__parrafo {
+	background: $gris;
+	border-radius: 5px;
+	background-position: center;
+	font-family: sans-serif;
+	font-size: 20px;
+	p {
+		text-align: justify;
+		margin: 20px;
+	}
+}
+
+/*servicios con boostrap*/
+.card-title {
+	color: $rojo;
+}
+.text-sub {
+	color: $blanco;
+}
+.card {
+	background-image: linear-gradient(to right, grey , black);
+	padding: 20px;
+	border-radius: 4px;
+	color: $blanco;
+}
+
+/*footer*/
+.footer__ubicacion {
+	text-align: center;
+	display: inline;
+}
+.footer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	justify-content: space-around;
+	align-items: baseline;
+	h3 {
+		margin-left: 30px;
+	}
+}
