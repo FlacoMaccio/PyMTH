@@ -16,12 +16,16 @@ header {
 	grid-template-columns: 1fr 3fr;
 	grid-auto-rows: $size/5 $size/5;
 }
+/*Menu nav*/
+nav nav-pills {
+	margin-top: 15px;
+}
+
 /*Logo del header*/
 .header__logomth {
 	float: left;
 	display: inline;
 	margin-left: 30px;
-	
 	&:hover {
 		transform: scale(0.5, 0.5);
 		transition: transform 3s;
@@ -55,7 +59,7 @@ header {
 			/*Lucioano quiero ponerle opacodad solo al fondo pero me lo toma a todo el parrafo incluido el texto
 			no logro desifrar como hacer para que me tomo solo el fondo.*/
 			text-align: center;
-		    color: $black;
+			color: $black;
 		}
 	}
 }
@@ -66,7 +70,7 @@ header {
 	text-align: center; 
 	letter-spacing: 5px;
 }
-	
+
 /*subtitulos de ns*/
 h3 { justify-content: center;
 	color:$rojo;
@@ -77,7 +81,7 @@ h3 { justify-content: center;
 /*galeria imagenes*/
 
 .titulo__seccion__parrafo { text-align: center; 
-		font-size: 20px;
+	font-size: 20px;
 }
 
 
