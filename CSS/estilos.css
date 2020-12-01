@@ -19,39 +19,50 @@ header {
     transition: transform 3s; }
 
 /*Barra de navegacion*/
-.navbar-collapse {
-  margin-left: 50px; }
+.nav {
+  margin-left: 25px;
+  margin-top: 50px; }
 
 .nav-link {
-  color: #F51010; }
+  color: #F51010;
+  font-size: 22px; }
+
+/*Titulo home*/
+h1 {
+  color: #F51010;
+  font-family: 'Cairo', sans-serif;
+  text-shadow: 3px 3px #000;
+  font-size: 60px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+  text-shadow: 1px 1px 1px #FFFFFF; }
 
 /*Parrafo del Home*/
 .Bienvenidos {
+  margin-top: 40px;
+  margin-bottom: 20px;
   height: 500px;
-  background-image: url(../Imagenes/portada.jpg);
-  opacity: 0.9;
+  background-image: url(../Imagenes/portada3.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1350px 500px;
-  font-family: sans-serif;
-  font-size: 30px;
-  text-align: center; }
-  .Bienvenidos article {
-    padding: 200px;
-    border-radius: 5px; }
-    .Bienvenidos article p {
-      background: #515151 0.5;
-      /*Lucioano quiero ponerle opacodad solo al fondo pero me lo toma a todo el parrafo incluido el texto
-			no logro desifrar como hacer para que me tomo solo el fondo.*/
-      text-align: center;
-      color: #000; }
+  background-size: 1350px 500px; }
+
+.parrafo {
+  font-family: 'Aton', sans-serif;
+  justify-content: center;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 30px; }
 
 /*Titulos de seccion*/
 .titulo__seccion {
+  margin-top: 40px;
   font-size: 35px;
-  font-family: sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   text-align: center;
-  letter-spacing: 5px; }
+  text-shadow: 3px 3px #515151;
+  letter-spacing: 7px; }
 
 /*subtitulos de ns*/
 h3 {
@@ -61,44 +72,14 @@ h3 {
   font-family: sans-serif; }
 
 /*galeria imagenes*/
-.titulo__seccion__parrafo {
-  text-align: center;
-  font-size: 20px; }
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-auto-rows: 200px;
-  grid-gap: 20px; }
-
 .galleryImg {
   width: 100%;
   height: 100%;
   object-fit: cover; }
 
-.galleryItem:nth-child(4) {
-  grid-column-start: span 2;
-  grid-row-start: span 2; }
-
-.galleryItem:nth-child(7) {
-  grid-column-start: span 2;
-  grid-row-start: span 2; }
-
-.galleryItem:nth-child(5) {
-  grid-column-start: span 2;
-  grid-row-start: span 2; }
-
-.galleryItem:nth-child(3) {
-  grid-column-start: span 2;
-  grid-row-start: span 2; }
-
-.galleryItem:nth-child(11) {
-  grid-column-start: span 2;
-  grid-row-start: span 2; }
-
-.galleryItem:nth-child(12) {
-  grid-column-start: span 2;
-  grid-row-start: span 2; }
+.titulo__seccion__parrafo {
+  text-align: center;
+  font-size: 20px; }
 
 .videos {
   display: flex;
@@ -116,20 +97,12 @@ h3 {
     font-style: italic;
     color: #F51010; }
 
-/*Fondo QS*/
-.quienes__container__parrafo {
-  background: #515151;
-  border-radius: 5px;
-  background-position: center;
-  font-family: sans-serif;
-  font-size: 20px; }
-  .quienes__container__parrafo p {
-    text-align: justify;
-    margin: 20px; }
+.card {
+  margin-top: 20px; }
 
-/*servicios con boostrap*/
+/*Nuestros servicios con boostrap*/
 .card-title {
-  color: #F51010; }
+  color: #000; }
 
 .text-sub {
   color: #FFFFFF; }
@@ -146,6 +119,8 @@ h3 {
   display: inline; }
 
 .footer {
+  margin-bottom: 30px;
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -153,4 +128,5 @@ h3 {
   justify-content: space-around;
   align-items: baseline; }
   .footer h3 {
-    margin-left: 30px; }
+    text-align: center;
+    object-position: center; }
