@@ -125,4 +125,8 @@ h1 {
   align-items: baseline; }
   .footer h3 {
     text-align: center;
-    object-position: center; }
+    object-position: center;
+    justify-content: center;
+    color: #F51010;
+    font-size: 20px;
+    font-family: sans-serif; }
